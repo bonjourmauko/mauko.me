@@ -1,3 +1,12 @@
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
 @font-face {
     font-family: 'Akzidenz-Grotesk-Bold';
     src: url('fonts/Akzidenz-Grotesk-Bold.otf') format('opentype');
@@ -23,7 +32,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Akzidenz-Grotesk-Light', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(242, 242, 242);
     color: rgb(0, 0, 0);
 }
 
@@ -51,6 +60,7 @@ body, html {
     clip-path: polygon(50% 50%, 0% 50%, 0% 100%, 50% 100%);
     border-width: 60px;
     border-color: rgb(184, 52, 52);
+    animation: rotate 5s infinite linear;
 }
 
 .circle2 {
@@ -81,13 +91,13 @@ body, html {
 
 h1 {
     font-family: 'Akzidenz-Grotesk-Bold', sans-serif;
-    font-size: 2.1em;
+    font-size: 2.4em;
     margin: 0;
 }
 
 p {
     margin: 10px 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* For Tablets */
